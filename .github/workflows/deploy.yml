@@ -31,7 +31,7 @@ jobs:
           wasm-bindgen --target web \
                        --out-dir ./out \
                        --no-typescript \
-                       target/wasm32-unknown-unknown/release/bevy_tuto.wasm
+                       target/wasm32-unknown-unknown/release/bevy-tuto.wasm
 
       - name: Generate index.html
         run: |
