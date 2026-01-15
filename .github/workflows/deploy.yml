@@ -76,7 +76,8 @@ jobs:
       - name: Copy Assets
         run: |
           # On copie le dossier assets s'il existe
-          if [ -d "src/assets" ]; then cp -r src/assets out/; fi
+          mkdir out/src
+          if [ -d "src/assets" ]; then cp -r src/assets out/src; fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
