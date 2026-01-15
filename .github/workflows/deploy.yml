@@ -57,7 +57,7 @@ jobs:
           </head>
           <body>
               <script type="module">
-                  import init from './bevy_tuto.js';
+                  import init from './bevy-tuto.js';
                   async function run() {
                       try {
                           await init();
