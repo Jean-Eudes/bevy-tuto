@@ -68,11 +68,16 @@ jobs:
       - name: Copy Assets
         run: |
           # On copie le dossier assets s'il existe
-          if [ -d "assets" ]; then cp -r assets out/; fi
+          if [ -d "src/assets" ]; then cp -r src/assets out/; fi
 
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          folder: out
-          branch: gh-pages
-
+          # Upload dist folder
+          path: 'out'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      
