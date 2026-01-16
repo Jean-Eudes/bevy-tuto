@@ -1,6 +1,7 @@
 # tutoriel basé sur bevy en rust.
 
   - https://aibodh.com/posts/bevy-rust-game-development-chapter-1/
+  - https://aibodh.com/posts/bevy-rust-game-development-chapter-2/
 
 # Credit and attributions
 
